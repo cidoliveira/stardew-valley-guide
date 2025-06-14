@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 
 .container {
   background: linear-gradient(180deg, #f1d9d7 0%, #c2daff 47.6%, #f7cff8 100%);
@@ -8,7 +8,7 @@
 
 .background-gradient {
   width: 100%;
-
+  height: auto;
   mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
 }
@@ -39,4 +39,95 @@
   font-family: "Libre Baskerville", serif;
   color: #222222;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #3297fd;
+  color: white;
+  padding: 20px;
+}
+
+.card-grid {
+  margin: 0px 150px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 50px 45px;
+  border-radius: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profile-picture {
+  position: relative;
+  max-width: 120px;
+  border-radius: 50%;
+  top: -10px;
+  object-fit: cover;
+  object-position: 10px 10px;
+}
+
+.picture-alex {
+  background-color: #85d2e2;
+  object-fit: cover;
+  object-position: 10px 10px;
+}
+
+.alex {
+  background: linear-gradient(
+    150.34deg,
+    #92e3f3 2.32%,
+    #bdf3f9 82.74%,
+    #c6f6fa 96.64%
+  );
+}
+
+.villager-name {
+  margin-top: 10px;
+  font-family: "Bree serif";
+  text-align: center;
+  font-size: 2rem;
+}
+
+.name-alex {
+  color: #2e545c;
+}
+
+.elliott {
+  background: linear-gradient(180deg, #ffcef0 0%, #f2f5ce 100%);
+}
+
+.picture-elliott {
+  background-color: #ffb5e5;
+}
+
+.name-elliott {
+  color: #af548f;
+}
+
+.harvey {
+  background: linear-gradient(150.17deg, #bcc08f 0.06%, #4fccc3 98.18%);
+}
+
+.picture-harvey {
+  background-color: #4e9893;
+  object-position: 8px 10px;
+}
+
+.name-harvey {
+  color: #306561;
+}
+
+.sam {
+  background: linear-gradient(147.22deg, #f2f5ce 1.65%, #ffb187 102.33%);
+}
+
+.picture-sam {
+  background-color: #d2845a;
+  object-position: 3px 10px;
+}
+
+.name-sam {
+  color: #ae6b47;
 }
