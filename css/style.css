@@ -4,6 +4,7 @@
   background: linear-gradient(180deg, #f1d9d7 0%, #c2daff 47.6%, #f7cff8 100%);
   color: black;
   height: auto;
+  padding-bottom: 100px;
 }
 
 .background-gradient {
@@ -44,7 +45,7 @@
 }
 
 .card-grid {
-  margin: 0px 200px;
+  margin: 50px 300px;
   display: flex;
   gap: 25px;
   align-items: center;
@@ -82,6 +83,17 @@
   );
 }
 
+.alex:hover {
+  background: linear-gradient(
+    322.16deg,
+    #92e3f3 3.19%,
+    #bdf3f9 77.81%,
+    #c6f6fa 90.71%
+  );
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 .villager-name {
   margin-top: 10px;
   font-family: "Bree serif";
@@ -94,7 +106,13 @@
 }
 
 .elliott {
-  background: linear-gradient(180deg, #ffcef0 0%, #f2f5ce 100%);
+  background: linear-gradient(322.16deg, #ffcef0 0%, #f2f5ce 100%);
+}
+
+.elliott:hover {
+  background: linear-gradient(322.16deg, #f2f5ce 0%, #ffcef0 100%);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .picture-elliott {
@@ -107,6 +125,11 @@
 
 .harvey {
   background: linear-gradient(150.17deg, #bcc08f 0.06%, #4fccc3 98.18%);
+}
+
+.harvey:hover {
+  background: linear-gradient(150.17deg, #4fccc3 0.06%, #bcc08f 98.18%);
+  cursor: pointer;
 }
 
 .picture-harvey {
@@ -122,6 +145,11 @@
   background: linear-gradient(147.22deg, #f2f5ce 1.65%, #ffb187 102.33%);
 }
 
+.sam:hover {
+  background: linear-gradient(147.22deg, #ffb187 1.65%, #f2f5ce 102.33%);
+  cursor: pointer;
+}
+
 .picture-sam {
   background-color: #d2845a;
   object-position: 3px 10px;
@@ -133,6 +161,11 @@
 
 .sebastian {
   background: linear-gradient(328.04deg, #a5eeff 1.82%, #a0b1f7 100%);
+}
+
+.sebastian:hover {
+  background: linear-gradient(328.04deg, #a0b1f7 1.82%, #a5eeff 100%);
+  cursor: pointer;
 }
 
 .picture-sebastian {
@@ -148,6 +181,11 @@
   background: linear-gradient(150.27deg, #ffcdb2 0.03%, #b5838d 98.02%);
 }
 
+.shane:hover {
+  background: linear-gradient(150.27deg, #b5838d 0.03%, #ffcdb2 98.02%);
+  cursor: pointer;
+}
+
 .picture-shane {
   background-color: #c98e71;
   object-position: 0px 10px;
@@ -159,6 +197,11 @@
 
 .abigail {
   background: linear-gradient(148.92deg, #f6aeae 0.06%, #c8b6ff 99.95%);
+}
+
+.abigail:hover {
+  background: linear-gradient(148.92deg, #c8b6ff 0.06%, #f6aeae 99.95%);
+  cursor: pointer;
 }
 
 .picture-abigail {
@@ -174,6 +217,11 @@
   background: linear-gradient(150.27deg, #efe5dc 0%, #f18585 97.99%);
 }
 
+.emily:hover {
+  background: linear-gradient(150.27deg, #f18585 0%, #efe5dc 97.99%);
+  cursor: pointer;
+}
+
 .picture-emily {
   background-color: #f18888;
   object-position: 2px 5px;
@@ -185,6 +233,11 @@
 
 .haley {
   background: linear-gradient(330.05deg, #f5ced4 0%, #ffa9c1 98.22%);
+}
+
+.haley:hover {
+  background: linear-gradient(330.05deg, #ffa9c1 0%, #f5ced4 98.22%);
+  cursor: pointer;
 }
 
 .picture-haley {
@@ -200,6 +253,11 @@
   background: linear-gradient(148.83deg, #cfe0c3 0.03%, #deab90 100.06%);
 }
 
+.leah:hover {
+  background: linear-gradient(148.83deg, #deab90 0.03%, #cfe0c3 100.06%);
+  cursor: pointer;
+}
+
 .picture-leah {
   background-color: #92796b;
   object-position: 3px 5px;
@@ -211,6 +269,11 @@
 
 .maru {
   background: linear-gradient(328.92deg, #6edef9 0.05%, #dddcbd 99.94%);
+}
+
+.maru:hover {
+  background: linear-gradient(328.92deg, #dddcbd 0.05%, #6edef9 99.94%);
+  cursor: pointer;
 }
 
 .picture-maru {
@@ -226,7 +289,48 @@
   background: linear-gradient(148.83deg, #c8e4e4 0%, #ffb8a5 100.03%);
 }
 
+.penny:hover {
+  background: linear-gradient(148.83deg, #ffb8a5 0%, #c8e4e4 100.03%);
+  cursor: pointer;
+}
+
 .picture-penny {
   background-color: #c39689;
   object-position: 3px 10px;
+}
+
+.name-penny {
+  color: #975353;
+}
+
+footer {
+  padding: 50px;
+}
+
+.done-by {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-note {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #222222;
+  font-family: "Bree serif";
+  gap: 5px;
+}
+
+.heart {
+  max-width: 50px;
+}
+
+.github {
+  text-decoration: none;
+  color: blue;
+}
+
+.github:hover {
+  color: red;
+  transition: 0.2s;
 }
