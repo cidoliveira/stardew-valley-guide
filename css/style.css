@@ -56,6 +56,11 @@
 .card {
   padding: 50px 40px;
   border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -84,13 +89,6 @@
 }
 
 .alex:hover {
-  background: linear-gradient(
-    322.16deg,
-    #92e3f3 3.19%,
-    #bdf3f9 77.81%,
-    #c6f6fa 90.71%
-  );
-  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -110,8 +108,6 @@
 }
 
 .elliott:hover {
-  background: linear-gradient(322.16deg, #f2f5ce 0%, #ffcef0 100%);
-  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -128,7 +124,6 @@
 }
 
 .harvey:hover {
-  background: linear-gradient(150.17deg, #4fccc3 0.06%, #bcc08f 98.18%);
   cursor: pointer;
 }
 
@@ -146,7 +141,6 @@
 }
 
 .sam:hover {
-  background: linear-gradient(147.22deg, #ffb187 1.65%, #f2f5ce 102.33%);
   cursor: pointer;
 }
 
@@ -164,7 +158,6 @@
 }
 
 .sebastian:hover {
-  background: linear-gradient(328.04deg, #a0b1f7 1.82%, #a5eeff 100%);
   cursor: pointer;
 }
 
@@ -182,7 +175,6 @@
 }
 
 .shane:hover {
-  background: linear-gradient(150.27deg, #b5838d 0.03%, #ffcdb2 98.02%);
   cursor: pointer;
 }
 
@@ -200,7 +192,6 @@
 }
 
 .abigail:hover {
-  background: linear-gradient(148.92deg, #c8b6ff 0.06%, #f6aeae 99.95%);
   cursor: pointer;
 }
 
@@ -218,7 +209,6 @@
 }
 
 .emily:hover {
-  background: linear-gradient(150.27deg, #f18585 0%, #efe5dc 97.99%);
   cursor: pointer;
 }
 
@@ -236,7 +226,6 @@
 }
 
 .haley:hover {
-  background: linear-gradient(330.05deg, #ffa9c1 0%, #f5ced4 98.22%);
   cursor: pointer;
 }
 
@@ -254,7 +243,6 @@
 }
 
 .leah:hover {
-  background: linear-gradient(148.83deg, #deab90 0.03%, #cfe0c3 100.06%);
   cursor: pointer;
 }
 
@@ -272,7 +260,6 @@
 }
 
 .maru:hover {
-  background: linear-gradient(328.92deg, #dddcbd 0.05%, #6edef9 99.94%);
   cursor: pointer;
 }
 
@@ -290,7 +277,6 @@
 }
 
 .penny:hover {
-  background: linear-gradient(148.83deg, #ffb8a5 0%, #c8e4e4 100.03%);
   cursor: pointer;
 }
 
