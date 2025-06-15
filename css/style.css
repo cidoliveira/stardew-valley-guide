@@ -3,7 +3,7 @@
 .container {
   background: linear-gradient(180deg, #f1d9d7 0%, #c2daff 47.6%, #f7cff8 100%);
   color: black;
-  height: 1800px;
+  height: auto;
 }
 
 .background-gradient {
@@ -18,18 +18,17 @@
   height: 800px;
   background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) -100%,
       rgba(255, 255, 255, 0) 100%
     ),
-    url("../img/efdc2888-1799-4338-b13f-a91594a88c06.png") center/cover
-      no-repeat;
+    url("../img/6be9c753-c604-4e3d-bcbe-5ed843d75fce.png") center/cover;
+  padding-top: 200px;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   padding: 40px 0px;
-  margin-top: 200px;
 }
 
 .lettering {
@@ -39,22 +38,22 @@
   font-family: "Libre Baskerville", serif;
   color: #222222;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #3297fd;
+  /* background-color: #3297fd; */
   color: white;
   padding: 20px;
 }
 
 .card-grid {
-  margin: 0px 150px;
+  margin: 0px 200px;
   display: flex;
-  gap: 40px;
+  gap: 25px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
-  padding: 50px 45px;
+  padding: 50px 40px;
   border-radius: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -87,7 +86,7 @@
   margin-top: 10px;
   font-family: "Bree serif";
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .name-alex {
@@ -130,4 +129,104 @@
 
 .name-sam {
   color: #ae6b47;
+}
+
+.sebastian {
+  background: linear-gradient(328.04deg, #a5eeff 1.82%, #a0b1f7 100%);
+}
+
+.picture-sebastian {
+  background-color: #7e8fc5;
+  object-position: 3px 10px;
+}
+
+.name-sebastian {
+  color: #2e545c;
+}
+
+.shane {
+  background: linear-gradient(150.27deg, #ffcdb2 0.03%, #b5838d 98.02%);
+}
+
+.picture-shane {
+  background-color: #c98e71;
+  object-position: 0px 10px;
+}
+
+.name-shane {
+  color: #894141;
+}
+
+.abigail {
+  background: linear-gradient(148.92deg, #f6aeae 0.06%, #c8b6ff 99.95%);
+}
+
+.picture-abigail {
+  background-color: #c483ad;
+  object-position: 5px 5px;
+}
+
+.name-abigail {
+  color: #9d5885;
+}
+
+.emily {
+  background: linear-gradient(150.27deg, #efe5dc 0%, #f18585 97.99%);
+}
+
+.picture-emily {
+  background-color: #f18888;
+  object-position: 2px 5px;
+}
+
+.name-emily {
+  color: #8f3d3d;
+}
+
+.haley {
+  background: linear-gradient(330.05deg, #f5ced4 0%, #ffa9c1 98.22%);
+}
+
+.picture-haley {
+  background-color: #c88a9c;
+  object-position: 3px 5px;
+}
+
+.name-haley {
+  color: #7e4b5a;
+}
+
+.leah {
+  background: linear-gradient(148.83deg, #cfe0c3 0.03%, #deab90 100.06%);
+}
+
+.picture-leah {
+  background-color: #92796b;
+  object-position: 3px 5px;
+}
+
+.name-leah {
+  color: #894141;
+}
+
+.maru {
+  background: linear-gradient(328.92deg, #6edef9 0.05%, #dddcbd 99.94%);
+}
+
+.picture-maru {
+  background-color: #48928d;
+  object-position: 3px 10px;
+}
+
+.name-maru {
+  color: #34716d;
+}
+
+.penny {
+  background: linear-gradient(148.83deg, #c8e4e4 0%, #ffb8a5 100.03%);
+}
+
+.picture-penny {
+  background-color: #c39689;
+  object-position: 3px 10px;
 }
