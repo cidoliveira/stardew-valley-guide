@@ -2,6 +2,7 @@
 
 body {
   background-color: #222222;
+  font-family: "Libre Baskerville", serif;
 }
 
 .container {
@@ -56,7 +57,7 @@ body {
 }
 
 .card-grid {
-  margin: 50px 300px;
+  margin: 50px 200px;
   display: flex;
   gap: 25px;
   align-items: center;
@@ -376,4 +377,96 @@ footer {
   .footer-note {
     font-size: 1rem;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: inline-flex;
+}
+
+.modal-card {
+  background-color: #fcdcfc;
+  border-radius: 10px;
+  border: solid 1px white;
+  padding: 40px;
+  margin: auto 400px;
+  position: relative;
+}
+
+.modal-profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.modal-villager-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-villager-name {
+  font-size: 3rem;
+}
+
+.modal-villager-birthday {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-villager-picture-background {
+  background-color: #c381fc;
+}
+
+.modal-villager-bio {
+  margin: 20px 0px;
+  line-height: normal;
+}
+
+.pink-cake {
+  max-width: 18px;
+}
+
+.birthday-date {
+  font-style: italic;
+}
+
+.loved-gifts-lettering {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.list-loved-gifts {
+  display: flex;
+  gap: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close-button img {
+  width: 20px;
+  height: 20px;
 }
