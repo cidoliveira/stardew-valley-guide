@@ -58,6 +58,11 @@ const villagers = {
       "../img/Jack_Be_Nimble,_Jack_Be_Thick.png",
       "../img/Salmon_Dinner.png",
     ],
+    lovedGiftsTitle: [
+      "Complete Breakfast",
+      "Jack Be Nimble, Jack Be Thick",
+      "Salmon Dinner",
+    ],
   },
   elliott: {
     profilePicture: profilePictureElliott.src,
@@ -72,6 +77,14 @@ const villagers = {
       "../img/Squid_Ink.png",
       "../img/Tom_Kha_Soup.png",
     ],
+    lovedGiftsTitle: [
+      "Crab Cakes",
+      "Duck Feather",
+      "Lobster",
+      "Pomegranate",
+      "Squid Ink",
+      "Tom Kha Soup",
+    ],
   },
   harvey: {
     profilePicture: profilePictureHarvey.src,
@@ -85,6 +98,20 @@ const villagers = {
       "../img/Truffle_Oil.png",
       "../img/Wine.png",
     ],
+    lovedGiftsTitle: ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
+  },
+  sam: {
+    profilePicture: profilePictureSam.src,
+    name: "Sam",
+    birthday: "Summer 17",
+    bio: "Sam is an energetic and fun-loving teen who dreams of becoming a rock star. He loves skateboarding, playing guitar, and hanging out with his younger brother Vincent. Sam brings a laid-back, cheerful vibe to Pelican Town.",
+    lovedGifts: [
+      "../img/Cactus_Fruit.png",
+      "../img/Maple_Bar.png",
+      "../img/Pizza.png",
+      "../img/Tigerseye.png",
+    ],
+    lovedGiftsTitle: ["Cactus Fruit", "Maple Bar", "Pizza", "Tigerseye"],
   },
 };
 
@@ -111,25 +138,25 @@ let modalVillagerPicture = document.querySelector(".modal-profile img");
 let modalVillagerName = document.querySelector(".modal-villager-name");
 let modalVillagerBirthday = document.querySelector(".birthday-date");
 let modalVillagerBio = document.querySelector(".modal-villager-bio");
-let lovedGift1 = document.querySelector(".loved-gift1");
-let lovedGift2 = document.querySelector(".loved-gift2");
-let lovedGift3 = document.querySelector(".loved-gift3");
-let lovedGift4 = document.querySelector(".loved-gift4");
-let lovedGift5 = document.querySelector(".loved-gift5");
-let lovedGift6 = document.querySelector(".loved-gift6");
-let lovedGift7 = document.querySelector(".loved-gift7");
+let lovedGiftsList = document.querySelector(".list-loved-gifts");
+
+//function to add loved gifts images when clicking a card
+function addGift(villager) {
+  lovedGiftsList.innerHTML = "";
+  for (let i = 0; i < villagers[villager].lovedGifts.length; i++) {
+    let imgGift = document.createElement("img");
+    imgGift.src = villagers[villager].lovedGifts[i];
+    imgGift.title = villagers[villager].lovedGiftsTitle[i];
+    lovedGiftsList.appendChild(imgGift);
+  }
+}
 
 cardAlex.addEventListener("click", () => {
   modalVillagerPicture.src = villagers.alex.profilePicture;
   modalVillagerName.innerHTML = villagers.alex.name;
   modalVillagerBirthday.innerHTML = villagers.alex.birthday;
   modalVillagerBio.innerHTML = villagers.alex.bio;
-  lovedGift1.src = villagers.alex.lovedGifts[0];
-  lovedGift2.src = villagers.alex.lovedGifts[1];
-  lovedGift3.src = villagers.alex.lovedGifts[2];
-  lovedGift4.src = villagers.alex.lovedGifts[3];
-  lovedGift5.src = villagers.alex.lovedGifts[4];
-  lovedGift6.src = villagers.alex.lovedGifts[5];
+  addGift("alex");
 });
 
 cardElliott.addEventListener("click", () => {
@@ -137,12 +164,7 @@ cardElliott.addEventListener("click", () => {
   modalVillagerName.innerHTML = villagers.elliott.name;
   modalVillagerBirthday.innerHTML = villagers.elliott.birthday;
   modalVillagerBio.innerHTML = villagers.elliott.bio;
-  lovedGift1.src = villagers.elliott.lovedGifts[0];
-  lovedGift2.src = villagers.elliott.lovedGifts[1];
-  lovedGift3.src = villagers.elliott.lovedGifts[2];
-  lovedGift4.src = villagers.elliott.lovedGifts[3];
-  lovedGift5.src = villagers.elliott.lovedGifts[4];
-  lovedGift6.src = villagers.elliott.lovedGifts[5];
+  addGift("elliott");
 });
 
 cardHarvey.addEventListener("click", () => {
@@ -150,10 +172,13 @@ cardHarvey.addEventListener("click", () => {
   modalVillagerName.innerHTML = villagers.harvey.name;
   modalVillagerBirthday.innerHTML = villagers.harvey.birthday;
   modalVillagerBio.innerHTML = villagers.harvey.bio;
-  lovedGift1.src = villagers.harvey.lovedGifts[0];
-  lovedGift2.src = villagers.harvey.lovedGifts[1];
-  lovedGift3.src = villagers.harvey.lovedGifts[2];
-  lovedGift4.src = villagers.harvey.lovedGifts[3];
-  lovedGift5.src = villagers.harvey.lovedGifts[4];
-  lovedGift6.src = villagers.harvey.lovedGifts[5];
+  addGift("harvey");
+});
+
+cardSam.addEventListener("click", () => {
+  modalVillagerPicture.src = villagers.sam.profilePicture;
+  modalVillagerName.innerHTML = villagers.sam.name;
+  modalVillagerBirthday.innerHTML = villagers.sam.birthday;
+  modalVillagerBio.innerHTML = villagers.sam.bio;
+  addGift("sam");
 });
