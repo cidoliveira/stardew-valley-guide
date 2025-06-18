@@ -470,3 +470,21 @@ footer {
   width: 20px;
   height: 20px;
 }
+
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card.visible {
+  animation: fadeInSmooth 0.8s ease-out forwards;
+}
