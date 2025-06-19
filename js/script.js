@@ -65,6 +65,7 @@ const villagers = {
       "Jack Be Nimble, Jack Be Thick",
       "Salmon Dinner",
     ],
+    objectPosition: "8px 5px",
   },
   elliott: {
     profilePicture: profilePictureElliott.src,
@@ -87,6 +88,7 @@ const villagers = {
       "Squid Ink",
       "Tom Kha Soup",
     ],
+    objectPosition: "8px 5px",
   },
   harvey: {
     profilePicture: profilePictureHarvey.src,
@@ -101,6 +103,7 @@ const villagers = {
       "../img/Wine.png",
     ],
     lovedGiftsTitle: ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
+    objectPosition: "5px 10px",
   },
   sam: {
     profilePicture: profilePictureSam.src,
@@ -114,6 +117,7 @@ const villagers = {
       "../img/Tigerseye.png",
     ],
     lovedGiftsTitle: ["Cactus Fruit", "Maple Bar", "Pizza", "Tigerseye"],
+    objectPosition: "5px 10px",
   },
   sebastian: {
     profilePicture: profilePictureSebastian.src,
@@ -136,6 +140,7 @@ const villagers = {
       "Sashimi",
       "Void Egg",
     ],
+    objectPosition: "5px 10px",
   },
   shane: {
     profilePicture: profilePictureShane.src,
@@ -149,6 +154,7 @@ const villagers = {
       "../img/Pizza.png",
     ],
     lovedGiftsTitle: ["Beer", "Hot Pepper", "Pepper Poppers", "Pizza"],
+    objectPosition: "0px 10px",
   },
   abigail: {
     profilePicture: profilePictureAbigail.src,
@@ -175,6 +181,7 @@ const villagers = {
       "Pumpkin",
       "Spicy Eel",
     ],
+    objectPosition: "8px 5px",
   },
   emily: {
     profilePicture: profilePictureEmily.src,
@@ -205,6 +212,7 @@ const villagers = {
       "Topaz",
       "Wool",
     ],
+    objectPosition: "2px 5px",
   },
   haley: {
     profilePicture: profilePictureHaley.src,
@@ -218,6 +226,7 @@ const villagers = {
       "../img/Sunflower.png",
     ],
     lovedGiftsTitle: ["Coconut", "Fruit Salad", "Pink Cake", "Sunflower"],
+    objectPosition: "5px 5px",
   },
   leah: {
     profilePicture: profilePictureLeah.src,
@@ -242,6 +251,7 @@ const villagers = {
       "Vegetable Medley",
       "Wine",
     ],
+    objectPosition: "5px 5px",
   },
   maru: {
     profilePicture: profilePictureMaru.src,
@@ -275,6 +285,7 @@ const villagers = {
       "Rhubarb Pie",
       "Strawberry",
     ],
+    objectPosition: "2px 10px",
   },
   penny: {
     profilePicture: profilePicturePenny.src,
@@ -305,8 +316,24 @@ const villagers = {
       "Sandfish",
       "Tom Kha Soup",
     ],
+    objectPosition: "2px 10px",
   },
 };
+
+let villagerIDs = [
+  "alex",
+  "elliott",
+  "harvey",
+  "sam",
+  "sebastian",
+  "shane",
+  "abigail",
+  "emily",
+  "haley",
+  "leah",
+  "maru",
+  "penny",
+];
 
 //display block modal in case of card clicked
 let eachCard = cards.forEach((card) => {
@@ -344,109 +371,16 @@ function addGift(villager) {
   }
 }
 
-cardAlex.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.alex.profilePicture;
-  modalVillagerPicture.style.objectPosition = "8px 10px";
-  modalVillagerName.innerHTML = villagers.alex.name;
-  modalVillagerBirthday.innerHTML = villagers.alex.birthday;
-  modalVillagerBio.innerHTML = villagers.alex.bio;
-  addGift("alex");
-});
-
-cardElliott.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.elliott.profilePicture;
-  modalVillagerPicture.style.objectPosition = "6px 10px";
-  modalVillagerName.innerHTML = villagers.elliott.name;
-  modalVillagerBirthday.innerHTML = villagers.elliott.birthday;
-  modalVillagerBio.innerHTML = villagers.elliott.bio;
-  addGift("elliott");
-});
-
-cardHarvey.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.harvey.profilePicture;
-  modalVillagerName.innerHTML = villagers.harvey.name;
-  modalVillagerBirthday.innerHTML = villagers.harvey.birthday;
-  modalVillagerBio.innerHTML = villagers.harvey.bio;
-  addGift("harvey");
-});
-
-cardSam.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.sam.profilePicture;
-  modalVillagerPicture.style.objectPosition = "4px 10px";
-  modalVillagerName.innerHTML = villagers.sam.name;
-  modalVillagerBirthday.innerHTML = villagers.sam.birthday;
-  modalVillagerBio.innerHTML = villagers.sam.bio;
-  addGift("sam");
-});
-
-cardSebastian.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.sebastian.profilePicture;
-  modalVillagerPicture.style.objectPosition = "5px 10px";
-  modalVillagerName.innerHTML = villagers.sebastian.name;
-  modalVillagerBirthday.innerHTML = villagers.sebastian.birthday;
-  modalVillagerBio.innerHTML = villagers.sebastian.bio;
-  addGift("sebastian");
-});
-
-cardShane.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.shane.profilePicture;
-  modalVillagerPicture.style.objectPosition = "0px 10px";
-  modalVillagerName.innerHTML = villagers.shane.name;
-  modalVillagerBirthday.innerHTML = villagers.shane.birthday;
-  modalVillagerBio.innerHTML = villagers.shane.bio;
-  addGift("shane");
-});
-
-cardAbigail.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.abigail.profilePicture;
-  modalVillagerPicture.style.objectPosition = "8px 5px";
-  modalVillagerName.innerHTML = villagers.abigail.name;
-  modalVillagerBirthday.innerHTML = villagers.abigail.birthday;
-  modalVillagerBio.innerHTML = villagers.abigail.bio;
-  addGift("abigail");
-});
-
-cardEmily.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.emily.profilePicture;
-  modalVillagerPicture.style.objectPosition = "2px 5px";
-  modalVillagerName.innerHTML = villagers.emily.name;
-  modalVillagerBirthday.innerHTML = villagers.emily.birthday;
-  modalVillagerBio.innerHTML = villagers.emily.bio;
-  addGift("emily");
-});
-
-cardHaley.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.haley.profilePicture;
-  modalVillagerPicture.style.objectPosition = "5px 5px";
-  modalVillagerName.innerHTML = villagers.haley.name;
-  modalVillagerBirthday.innerHTML = villagers.haley.birthday;
-  modalVillagerBio.innerHTML = villagers.haley.bio;
-  addGift("haley");
-});
-
-cardLeah.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.leah.profilePicture;
-  modalVillagerPicture.style.objectPosition = "5px 5px";
-  modalVillagerName.innerHTML = villagers.leah.name;
-  modalVillagerBirthday.innerHTML = villagers.leah.birthday;
-  modalVillagerBio.innerHTML = villagers.leah.bio;
-  addGift("leah");
-});
-
-cardMaru.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.maru.profilePicture;
-  modalVillagerPicture.style.objectPosition = "2px 10px";
-  modalVillagerName.innerHTML = villagers.maru.name;
-  modalVillagerBirthday.innerHTML = villagers.maru.birthday;
-  modalVillagerBio.innerHTML = villagers.maru.bio;
-  addGift("maru");
-});
-
-cardPenny.addEventListener("click", () => {
-  modalVillagerPicture.src = villagers.penny.profilePicture;
-  modalVillagerPicture.style.objectPosition = "2px 10px";
-  modalVillagerName.innerHTML = villagers.penny.name;
-  modalVillagerBirthday.innerHTML = villagers.penny.birthday;
-  modalVillagerBio.innerHTML = villagers.penny.bio;
-  addGift("penny");
+//changing card informations
+villagerIDs.forEach((id) => {
+  let card = document.getElementById(id);
+  card.addEventListener("click", () => {
+    const villager = villagers[id];
+    modalVillagerPicture.src = villager.profilePicture;
+    modalVillagerName.innerHTML = villager.name;
+    modalVillagerBirthday.innerHTML = villager.birthday;
+    modalVillagerBio.innerHTML = villager.bio;
+    modalVillagerPicture.style.objectPosition = villager.objectPosition;
+    addGift(id);
+  });
 });

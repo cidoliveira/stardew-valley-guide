@@ -528,6 +528,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    background-color: #c49cd3;
   }
 
   .list-loved-gifts img {
