@@ -27,7 +27,8 @@ body {
       rgba(255, 255, 255, 0) 100%
     ),
     url("../img/6be9c753-c604-4e3d-bcbe-5ed843d75fce.png") center/cover;
-  padding: 300px 0px;
+  padding-top: 200px;
+  padding-bottom: 300px;
 }
 
 .logo {
@@ -54,6 +55,29 @@ body {
   color: white;
   padding: 20px;
   z-index: 1000;
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+}
+
+.start-quiz {
+  display: inline;
+  justify-content: center;
+  text-decoration: none;
+  background: rgb(228, 39, 39);
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins";
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.start-quiz:hover {
+  background-color: #c381fc;
+  color: #222222;
 }
 
 .card-grid {
@@ -347,7 +371,8 @@ footer {
 
 @media (max-width: 768px) {
   .background {
-    padding: 150px 0px;
+    padding: 100px 0px;
+    padding-bottom: 300px;
   }
 
   .logo {
@@ -361,11 +386,13 @@ footer {
 
   .lettering {
     margin-top: 50px;
+    margin-bottom: 40px;
     font-size: 3rem;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
+
   .card-grid {
     margin: 30px 40px;
     gap: 20px;
