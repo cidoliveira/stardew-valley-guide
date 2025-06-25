@@ -156,6 +156,8 @@ let optionTwo = document.getElementById("option2");
 let optionThree = document.getElementById("option3");
 let optionFour = document.getElementById("option4");
 let options = document.querySelectorAll(".option");
+let profileDisplay = document.querySelector(".profile-display");
+let optionList = document.querySelector("ul");
 
 console.log(options);
 
@@ -250,7 +252,9 @@ options.forEach((i) => {
     if (indexArray > questionIndex.length) {
       question.innerText = "Your stardew match is...";
       options.forEach((i) => {
+        optionList.classList.add("display-none");
         i.classList.add("display-none");
+        profileDisplay.classList.add("profile");
       });
     }
   });
