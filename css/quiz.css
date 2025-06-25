@@ -86,3 +86,56 @@ body {
 .next:hover {
   background-color: #558f9b;
 }
+
+.display-none {
+  display: none;
+}
+
+.profile-display {
+  display: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  max-width: 200px;
+  justify-content: center;
+}
+
+.profile-text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
+  color: #4e3244;
+}
+
+.profile-text {
+  background-color: white;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+span {
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}

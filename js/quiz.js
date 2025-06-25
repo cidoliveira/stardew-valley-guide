@@ -77,70 +77,70 @@ let quizContent = {
     option4: "Sewing a wild outfit and dancing in the living-room.",
   },
   question3: {
-    question: "A surprise night carnival rolls into town. You…",
+    question: "3. A surprise night carnival rolls into town. You…",
     option1: "Retreat to the basement—there’s code to write.",
     option2: "Grab a beer and people-watch from the sidelines.",
     option3: "Shepherd every child to the best rides.",
     option4: "Dash around snapping flawless photos for social media.",
   },
   question4: {
-    question: "Desk item you cannot live without:",
+    question: "4. Desk item you cannot live without:",
     option1: "A rainbow crystal that “just feels good.",
     option2: "A micro-soldering kit for side projects.",
     option3: "A model plane you tinker with between tasks.",
     option4: "A custom guitar pick that’s seen 100 gigs.",
   },
   question5: {
-    question: "Dream weekend trip:",
+    question: "5. Dream weekend trip:",
     option1: "An artist’s cabin deep in the woods.",
     option2: "Neon city nights full of arcades and ramen.",
     option3: "A three-day electronic-music & dance festival.",
     option4: "Behind-the-scenes tour of a major observatory.",
   },
   question6: {
-    question: "Comfort food after a rough day:",
+    question: "6. Comfort food after a rough day:",
     option1: "Fried chicken and a cold Joja Cola.",
     option2: "Thick vegetable soup made from scratch.",
     option3: "Garden salad with calming herbal tea.",
     option4: "Goat-cheese salad drizzled with honey.",
   },
   question7: {
-    question: "Your core motivation:",
+    question: "7. Your core motivation:",
     option1: "Finally having stable finances.",
     option2: "Keeping people healthy and safe.",
     option3: "Figuring out how everything works.",
     option4: "Creating beauty—and getting credit for it.",
   },
   question8: {
-    question: "In a co-op video game you’re usually the…",
+    question: "8. In a co-op video game you’re usually the…",
     option1: "Hammer-swinging tank who soaks damage.",
     option2: "Speedy DPS who loves rhythm mini-games.",
     option3: "Star striker in every sports title.",
     option4: "Bard/support who writes the lore in real time.",
   },
   question9: {
-    question: "You unearth a mysterious artifact. First instinct?",
+    question: "9. You unearth a mysterious artifact. First instinct?",
     option1: "Keep it as a lucky charm—might be magic!",
     option2: "Describe it poetically in your journal.",
     option3: "Turn it into a statement accessory.",
     option4: "Sketch it, then carve a wooden replica.",
   },
   question10: {
-    question: "Favorite season in Pelican Town:",
+    question: "10. Favorite season in Pelican Town:",
     option1: "Fall—crunchy leaves and new lessons.",
     option2: "Spring—prime flower-photography season.",
     option3: "Summer—Gridball playoffs and sunny workouts.",
     option4: "Winter—You love having a warm cup of coffee.",
   },
   question11: {
-    question: "Personal motto:",
+    question: "11. Personal motto:",
     option1: "Let the tide write the story.",
     option2: "Adventure begins outside your comfort zone.",
     option3: "Build, test, repeat!",
     option4: "Quiet minds code deep.",
   },
   question12: {
-    question: "Friends describe you as…",
+    question: "12. Friends describe you as…",
     option1: "The walking party playlist.",
     option2: "Loyal but hard to read at first.",
     option3: "Fearless and a little eccentric.",
@@ -247,5 +247,26 @@ options.forEach((i) => {
     optionTwo.innerText = option2Index[option2Array++];
     optionThree.innerText = option3Index[option3Array++];
     optionFour.innerText = option4Index[option4Array++];
+    if (indexArray > questionIndex.length) {
+      question.innerText = "Your stardew match is...";
+      options.forEach((i) => {
+        i.classList.add("display-none");
+      });
+    }
   });
 });
+
+let counters = [
+  bachelors.alex.counter,
+  bachelors.haley.counter,
+  bachelors.abigail.counter,
+  bachelors.leah.counter,
+  bachelors.maru.counter,
+  bachelors.penny.counter,
+  bachelors.emily.counter,
+  bachelors.harvey.counter,
+  bachelors.sebastian.counter,
+  bachelors.elliott.counter,
+  bachelors.sam.counter,
+  bachelors.shane.counter,
+];
