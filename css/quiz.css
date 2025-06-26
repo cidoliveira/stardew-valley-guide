@@ -17,7 +17,7 @@ body {
 
 .background {
   width: 100%;
-  height: 945px;
+  height: auto;
   object-fit: cover;
   overflow: hidden;
 }
@@ -122,19 +122,26 @@ body {
   margin-bottom: 0px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .profile-name {
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
   margin: 20px;
-  color: #4e3244;
+  color: #a31e1e;
+  font-family: "Libre Baskerville", serif;
 }
 
 .profile-text {
+  font-size: 1rem;
   background-color: #222222;
   padding: 40px;
   border-radius: 25px;
   color: white;
+  line-height: normal;
 }
 
 span {

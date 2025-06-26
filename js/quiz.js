@@ -242,7 +242,22 @@ let option2Array = 1;
 let option3Array = 1;
 let option4Array = 1;
 
-options.forEach((i) => {
+let counters = [
+  bachelors.alex.counter,
+  bachelors.elliott.counter,
+  bachelors.harvey.counter,
+  bachelors.sam.counter,
+  bachelors.sebastian.counter,
+  bachelors.shane.counter,
+  bachelors.abigail.counter,
+  bachelors.haley.counter,
+  bachelors.leah.counter,
+  bachelors.maru.counter,
+  bachelors.penny.counter,
+  bachelors.emily.counter,
+];
+
+let textChanger = options.forEach((i) => {
   i.addEventListener("click", () => {
     question.innerText = questionIndex[indexArray++];
     optionOne.innerText = option1Index[option1Array++];
@@ -251,26 +266,89 @@ options.forEach((i) => {
     optionFour.innerText = option4Index[option4Array++];
     if (indexArray > questionIndex.length) {
       question.innerText = "Your stardew match is...";
+      console.log(Math.max(...counters));
       options.forEach((i) => {
         optionList.classList.add("display-none");
         i.classList.add("display-none");
         profileDisplay.classList.add("profile");
+        question.classList.add("text-center");
       });
     }
   });
 });
 
-let counters = [
-  bachelors.alex.counter,
-  bachelors.haley.counter,
-  bachelors.abigail.counter,
-  bachelors.leah.counter,
-  bachelors.maru.counter,
-  bachelors.penny.counter,
-  bachelors.emily.counter,
-  bachelors.harvey.counter,
-  bachelors.sebastian.counter,
-  bachelors.elliott.counter,
-  bachelors.sam.counter,
-  bachelors.shane.counter,
-];
+option1.addEventListener("click", () => {
+  const currentIndex = indexArray - 1;
+
+  if (option1.innerText === option1Index[currentIndex]) {
+    if (currentIndex === 0) bachelors.abigail.counter++;
+    else if (currentIndex === 1) bachelors.penny.counter++;
+    else if (currentIndex === 2) bachelors.sebastian.counter++;
+    else if (currentIndex === 3) bachelors.emily.counter++;
+    else if (currentIndex === 4) bachelors.leah.counter++;
+    else if (currentIndex === 5) bachelors.shane.counter++;
+    else if (currentIndex === 6) bachelors.shane.counter++;
+    else if (currentIndex === 7) bachelors.shane.counter++;
+    else if (currentIndex === 8) bachelors.abigail.counter++;
+    else if (currentIndex === 9) bachelors.penny.counter++;
+    else if (currentIndex === 10) bachelors.elliott.counter++;
+    else if (currentIndex === 11) bachelors.sam.counter++;
+  }
+});
+
+option2.addEventListener("click", () => {
+  const currentIndex = indexArray - 1;
+
+  if (option2.innerText === option2Index[currentIndex]) {
+    if (currentIndex === 0) bachelors.haley.counter++;
+    else if (currentIndex === 1) bachelors.leah.counter++;
+    else if (currentIndex === 2) bachelors.shane.counter++;
+    else if (currentIndex === 3) bachelors.maru.counter++;
+    else if (currentIndex === 4) bachelors.sebastian.counter++;
+    else if (currentIndex === 5) bachelors.penny.counter++;
+    else if (currentIndex === 6) bachelors.harvey.counter++;
+    else if (currentIndex === 7) bachelors.sam.counter++;
+    else if (currentIndex === 8) bachelors.elliott.counter++;
+    else if (currentIndex === 9) bachelors.haley.counter++;
+    else if (currentIndex === 10) bachelors.abigail.counter++;
+    else if (currentIndex === 11) bachelors.sebastian.counter++;
+  }
+});
+
+option3.addEventListener("click", () => {
+  const currentIndex = indexArray - 1;
+
+  if (option3.innerText === option3Index[currentIndex]) {
+    if (currentIndex === 0) bachelors.sam.counter++;
+    else if (currentIndex === 1) bachelors.elliott.counter++;
+    else if (currentIndex === 2) bachelors.penny.counter++;
+    else if (currentIndex === 3) bachelors.harvey.counter++;
+    else if (currentIndex === 4) bachelors.emily.counter++;
+    else if (currentIndex === 5) bachelors.harvey.counter++;
+    else if (currentIndex === 6) bachelors.maru.counter++;
+    else if (currentIndex === 7) bachelors.alex.counter++;
+    else if (currentIndex === 8) bachelors.emily.counter++;
+    else if (currentIndex === 9) bachelors.harvey.counter++;
+    else if (currentIndex === 10) bachelors.maru.counter++;
+    else if (currentIndex === 11) bachelors.abigail.counter++;
+  }
+});
+
+option4.addEventListener("click", () => {
+  const currentIndex = indexArray - 1;
+
+  if (option4.innerText === option4Index[currentIndex]) {
+    if (currentIndex === 0) bachelors.alex.counter++;
+    else if (currentIndex === 1) bachelors.emily.counter++;
+    else if (currentIndex === 2) bachelors.haley.counter++;
+    else if (currentIndex === 3) bachelors.sam.counter++;
+    else if (currentIndex === 4) bachelors.maru.counter++;
+    else if (currentIndex === 5) bachelors.leah.counter++;
+    else if (currentIndex === 6) bachelors.haley.counter++;
+    else if (currentIndex === 7) bachelors.elliott.counter++;
+    else if (currentIndex === 8) bachelors.leah.counter++;
+    else if (currentIndex === 9) bachelors.alex.counter++;
+    else if (currentIndex === 10) bachelors.sebastian.counter++;
+    else if (currentIndex === 11) bachelors.alex.counter++;
+  }
+});
