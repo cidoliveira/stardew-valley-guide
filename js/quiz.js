@@ -1,11 +1,6 @@
-let profileName = document.querySelector(".profile-name");
-let profilePicture = document.querySelector(".profile-picture");
-let slogan = document.querySelector(".slogan");
-let paragraph1 = document.querySelector(".paragraph1");
-let paragraph2 = document.querySelector(".paragraph2");
-
 let bachelors = {
   alex: {
+    name: "Alex",
     counter: 0,
     slogan: "Confident. Determined. Always on the move.",
     avatar: "./img/Alex.webp",
@@ -17,6 +12,7 @@ let bachelors = {
   },
 
   elliott: {
+    name: "Elliott",
     counter: 0,
     slogan: "Romantic. Artistic. A dreamer at heart.",
     avatar: "./img/Elliott_Blush.png",
@@ -28,6 +24,7 @@ let bachelors = {
   },
 
   harvey: {
+    name: "Harvey",
     counter: 0,
     slogan: "Reliable. Caring. A gentle soul with a big heart.",
     avatar: "./img/Harvey.png",
@@ -39,6 +36,7 @@ let bachelors = {
   },
 
   sam: {
+    name: "Sam",
     counter: 0,
     slogan: "Free-spirited. Upbeat. A heart full of dreams.",
     avatar: "./img/Sam.png",
@@ -50,6 +48,7 @@ let bachelors = {
   },
 
   sebastian: {
+    name: "Sebastian",
     counter: 0,
     slogan: "Mysterious. Thoughtful. Deeply creative.",
     avatar: "./img/Sebastian.png",
@@ -61,6 +60,7 @@ let bachelors = {
   },
 
   shane: {
+    name: "Shane",
     counter: 0,
     slogan: "Blunt. Honest. A soft heart under tough layers.",
     avatar: "./img/Shane.png",
@@ -72,6 +72,7 @@ let bachelors = {
   },
 
   abigail: {
+    name: "Abigail",
     counter: 0,
     slogan: "Curious. Adventurous. Marches to her own beat.",
     avatar: "./img/Abigail.png",
@@ -83,6 +84,7 @@ let bachelors = {
   },
 
   haley: {
+    name: "Haley",
     counter: 0,
     slogan: "Charming. Stylish. More than meets the eye.",
     avatar: "./img/Haley (1).png",
@@ -94,6 +96,7 @@ let bachelors = {
   },
 
   leah: {
+    name: "Leah",
     counter: 0,
     slogan: "Creative. Independent. In harmony with nature.",
     avatar: "./img/Leah.png",
@@ -105,6 +108,7 @@ let bachelors = {
   },
 
   maru: {
+    name: "Maru",
     counter: 0,
     slogan: "Curious. Driven. A mind always building.",
     avatar: "./img/Maru.png",
@@ -116,6 +120,7 @@ let bachelors = {
   },
 
   penny: {
+    name: "Penny",
     counter: 0,
     slogan: "Kind-hearted. Nurturing. Quietly strong.",
     avatar: "./img/Penny.png",
@@ -127,6 +132,7 @@ let bachelors = {
   },
 
   emily: {
+    name: "Emily",
     counter: 0,
     slogan: "Vibrant. Free-spirited. A creator of joy.",
     avatar: "./img/Emily.png",
@@ -319,21 +325,6 @@ let option2Array = 1;
 let option3Array = 1;
 let option4Array = 1;
 
-let counters = [
-  bachelors.alex.counter,
-  bachelors.elliott.counter,
-  bachelors.harvey.counter,
-  bachelors.sam.counter,
-  bachelors.sebastian.counter,
-  bachelors.shane.counter,
-  bachelors.abigail.counter,
-  bachelors.haley.counter,
-  bachelors.leah.counter,
-  bachelors.maru.counter,
-  bachelors.penny.counter,
-  bachelors.emily.counter,
-];
-
 let option1QuestionMap = [
   "abigail",
   "penny",
@@ -458,6 +449,28 @@ let characterCounter = options.forEach((i) => {
   });
 });
 
+let counters = [
+  bachelors.alex,
+  bachelors.elliott,
+  bachelors.harvey,
+  bachelors.sam,
+  bachelors.sebastian,
+  bachelors.shane,
+  bachelors.abigail,
+  bachelors.haley,
+  bachelors.leah,
+  bachelors.maru,
+  bachelors.penny,
+  bachelors.emily,
+];
+
+let profileName = document.querySelector(".profile-name");
+let profilePicture = document.querySelector(".profile-picture");
+let slogan = document.querySelector(".slogan");
+let paragraph1 = document.querySelector(".paragraph1");
+let paragraph2 = document.querySelector(".paragraph2");
+let keyTraits = document.querySelector(".key-traits");
+
 let textChanger = options.forEach((i) => {
   i.addEventListener("click", () => {
     function replaceClass() {
@@ -493,6 +506,15 @@ let textChanger = options.forEach((i) => {
         profileDisplay.classList.add("profile");
         question.classList.add("text-center");
       });
+
+      counters.sort((a, b) => b.counter - a.counter);
+      let winner = counters[0];
+      profileName.innerText = winner.name;
+      profilePicture.src = winner.avatar;
+      slogan.innerText = winner.slogan;
+      paragraph1.innerText = winner.paragraph1;
+      paragraph2.innerText = winner.paragraph2;
+      keyTraits.innerText = winner.keyTraits;
     }
   });
 });
