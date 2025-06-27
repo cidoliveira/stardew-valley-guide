@@ -317,8 +317,6 @@ let option4QuestionMap = [
   "alex",
 ];
 
-let option;
-
 let option1QuestionIndex = 0;
 let option1QuestionMapping = 0;
 let option2QuestionIndex = 0;
@@ -327,6 +325,61 @@ let option3QuestionIndex = 0;
 let option3QuestionMapping = 0;
 let option4QuestionIndex = 0;
 let option4QuestionMapping = 0;
+
+let characterCounter = options.forEach((i) => {
+  i.addEventListener("click", (e) => {
+    const classes = e.target.classList;
+
+    if (classes.contains("abigail")) {
+      bachelors.abigail.counter++;
+      console.log(`Abigail: ${bachelors.abigail.counter}`);
+    }
+    if (classes.contains("alex")) {
+      bachelors.alex.counter++;
+      console.log(`Alex: ${bachelors.alex.counter}`);
+    }
+    if (classes.contains("sam")) {
+      bachelors.sam.counter++;
+      console.log(`Sam: ${bachelors.sam.counter}`);
+    }
+    if (classes.contains("haley")) {
+      bachelors.haley.counter++;
+      console.log(`Haley: ${bachelors.haley.counter}`);
+    }
+    if (classes.contains("elliott")) {
+      bachelors.elliott.counter++;
+      console.log(`Elliott: ${bachelors.elliott.counter}`);
+    }
+    if (classes.contains("harvey")) {
+      bachelors.harvey.counter++;
+      console.log(`Harvey: ${bachelors.harvey.counter}`);
+    }
+    if (classes.contains("sebastian")) {
+      bachelors.sebastian.counter++;
+      console.log(`Sebastian: ${bachelors.sebastian.counter}`);
+    }
+    if (classes.contains("shane")) {
+      bachelors.shane.counter++;
+      console.log(`Shane: ${bachelors.shane.counter}`);
+    }
+    if (classes.contains("leah")) {
+      bachelors.leah.counter++;
+      console.log(`Leah: ${bachelors.leah.counter}`);
+    }
+    if (classes.contains("maru")) {
+      bachelors.maru.counter++;
+      console.log(`Maru: ${bachelors.maru.counter}`);
+    }
+    if (classes.contains("penny")) {
+      bachelors.penny.counter++;
+      console.log(`Penny: ${bachelors.penny.counter}`);
+    }
+    if (classes.contains("emily")) {
+      bachelors.emily.counter++;
+      console.log(`Emily: ${bachelors.emily.counter}`);
+    }
+  });
+});
 
 let textChanger = options.forEach((i) => {
   i.addEventListener("click", () => {
@@ -354,6 +407,7 @@ let textChanger = options.forEach((i) => {
     optionTwo.innerText = option2Index[option2Array++];
     optionThree.innerText = option3Index[option3Array++];
     optionFour.innerText = option4Index[option4Array++];
+
     if (indexArray > questionIndex.length) {
       question.innerText = "Your stardew match is...";
       options.forEach((i) => {
