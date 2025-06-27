@@ -155,3 +155,57 @@ span {
 h3 {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding: 50px;
+  }
+
+  .question {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .option {
+    padding: 20px 0px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+
+  .profile-text {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 30px;
+  }
+
+  .question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .option {
+    padding: 15px 0px;
+  }
+
+  .profile-picture {
+    width: 150px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .profile-text {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
