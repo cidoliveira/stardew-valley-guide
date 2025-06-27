@@ -168,7 +168,7 @@ let quizContent = {
   },
   question4: {
     question: "4. Desk item you cannot live without:",
-    option1: "A rainbow crystal that “just feels good.",
+    option1: 'A rainbow crystal that “just feels good".',
     option2: "A micro-soldering kit for side projects.",
     option3: "A model plane you tinker with between tasks.",
     option4: "A custom guitar pick that’s seen 100 gigs.",
