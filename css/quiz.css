@@ -154,58 +154,154 @@ span {
 
 h3 {
   text-align: center;
+  font-style: italic;
+  font-family: "Libre Baskerville", serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .modal {
-    width: 90%;
-    padding: 50px;
+    width: 500px;
+    padding: 80px;
   }
 
   .question {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
   }
 
   .option {
-    padding: 20px 0px;
+    padding: 25px 0;
+    font-size: 1rem;
+  }
+
+  .profile-picture {
+    width: 180px;
   }
 
   .profile-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 15px;
   }
 
   .profile-text {
     padding: 30px;
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .modal {
-    padding: 30px;
+    width: 450px;
+    padding: 60px;
   }
 
   .question {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
   }
 
   .option {
-    padding: 15px 0px;
+    padding: 20px 0;
+    font-size: 0.95rem;
   }
 
   .profile-picture {
-    width: 150px;
+    width: 160px;
   }
 
   .profile-name {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .profile-text {
+    padding: 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding: 50px 30px;
+  }
+
+  .question {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .option {
+    padding: 18px 0;
+    font-size: 0.9rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    width: 140px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-text {
+    padding: 20px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .question {
+    font-size: 1.3rem;
+  }
+
+  .option {
+    padding: 15px 0;
+    font-size: 0.85rem;
+  }
+
+  .profile-picture {
+    width: 120px;
+  }
+
+  .profile-name {
+    font-size: 1.3rem;
     padding: 10px;
   }
 
   .profile-text {
-    font-size: 0.9rem;
-    padding: 20px;
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .question {
+    font-size: 1.2rem;
+  }
+
+  .option {
+    padding: 12px 0;
+    font-size: 0.8rem;
+  }
+
+  .profile-picture {
+    width: 100px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .profile-text {
+    padding: 10px;
+    font-size: 0.75rem;
   }
 }
