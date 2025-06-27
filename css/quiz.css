@@ -166,11 +166,13 @@ h3 {
 
   .question {
     font-size: 1.8rem;
+    line-height: 1.4;
   }
 
   .option {
     padding: 25px 0;
     font-size: 1rem;
+    line-height: 1.3;
   }
 
   .profile-picture {
@@ -179,12 +181,14 @@ h3 {
 
   .profile-name {
     font-size: 1.8rem;
-    padding: 15px;
+    padding: 20px;
+    width: 100%;
   }
 
   .profile-text {
     padding: 30px;
     font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 
@@ -196,11 +200,13 @@ h3 {
 
   .question {
     font-size: 1.6rem;
+    line-height: 1.4;
   }
 
   .option {
     padding: 20px 0;
     font-size: 0.95rem;
+    line-height: 1.3;
   }
 
   .profile-picture {
@@ -209,11 +215,14 @@ h3 {
 
   .profile-name {
     font-size: 1.6rem;
+    padding: 20px;
+    width: 100%;
   }
 
   .profile-text {
     padding: 25px;
     font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
 
@@ -225,12 +234,14 @@ h3 {
 
   .question {
     font-size: 1.5rem;
+    line-height: 1.4;
     text-align: center;
   }
 
   .option {
     padding: 18px 0;
     font-size: 0.9rem;
+    line-height: 1.3;
   }
 
   .profile {
@@ -244,11 +255,14 @@ h3 {
 
   .profile-name {
     font-size: 1.5rem;
+    padding: 15px;
+    width: 100%;
   }
 
   .profile-text {
     padding: 20px;
     font-size: 0.85rem;
+    line-height: 1.6;
   }
 }
 
@@ -260,11 +274,13 @@ h3 {
 
   .question {
     font-size: 1.3rem;
+    line-height: 1.4;
   }
 
   .option {
     padding: 15px 0;
     font-size: 0.85rem;
+    line-height: 1.3;
   }
 
   .profile-picture {
@@ -274,22 +290,26 @@ h3 {
   .profile-name {
     font-size: 1.3rem;
     padding: 10px;
+    width: 100%;
   }
 
   .profile-text {
     padding: 15px;
     font-size: 0.8rem;
+    line-height: 1.6;
   }
 }
 
 @media (max-width: 400px) {
   .question {
     font-size: 1.2rem;
+    line-height: 1.4;
   }
 
   .option {
     padding: 12px 0;
     font-size: 0.8rem;
+    line-height: 1.3;
   }
 
   .profile-picture {
@@ -298,10 +318,13 @@ h3 {
 
   .profile-name {
     font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
   }
 
   .profile-text {
     padding: 10px;
     font-size: 0.75rem;
+    line-height: 1.6;
   }
 }
